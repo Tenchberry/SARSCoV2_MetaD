@@ -1,0 +1,9 @@
+RESTART
+#PLUMED script to perform metadynamics over the C-CA-CB-CG dihedral angle of His41 in SARS-CoV1/CoV-2 MPro
+
+t1: TORSION ATOMS=607,609,612,618
+
+#Metadynamics setup - Gaussian of height 0.1 kJ/mol with adaptive bias width - geometric scheme
+metad: METAD ARG=t1 SIGMA=0.05 HEIGHT=0.01 ADAPTIVE=GEOM GRID_MIN=-pi GRID_MAX=pi GRID_SPACING=0.1 PACE=500 FILE=HILLS_His41Tor
+
+PRINT ARG=t1,metad.bias STRIDE=100 FILE=COLVAR_His14Tor

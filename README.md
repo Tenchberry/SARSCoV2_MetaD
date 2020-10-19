@@ -4,6 +4,8 @@ PLUMED-NEST archive of the metadynamics simulation scripts and analysis scripts 
 
 The paper is currently available as a preprint on ChemrXiv - DOI: https://doi.org/10.26434/chemrxiv.12967655.v2
 
+Project ID: [plumID:20.027](https://www.plumed-nest.org/eggs/20/027/)
+
 **Authors**
 
 Khaled Abdel-Maksoud - `K.Abdel-Maksoud@soton.ac.uk`

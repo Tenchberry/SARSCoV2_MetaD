@@ -1,4 +1,4 @@
-# Allosteric_SARS-CoV2_MetaD
+# SARS-CoV2_MetaD
 
 [![plumID:20.027](https://www.plumed-nest.org/eggs/20/027/badge.svg)](https://www.plumed-nest.org/eggs/20/027/)
 

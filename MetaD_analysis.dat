@@ -1,7 +1,9 @@
 #PLUMED script to output the C-CA-CB-CG and CA-CB-CG-CD2 dihedral angles of His41 in SARS-CoV1/CoV2 Mpro
+#Also outputs the His41-Nepsilon to Cys145-Sgamma atomic distance as dyad_dist and the His41-NHdelta to Glu166 carboxyl salt bridge interaction distance 
 
 t1: TORSION ATOMS=607,609,612,618
 t2: TORSION ATOMS=607,609,612,620
 dyad_dist: DISTANCE ATOMS=616,2241
+saltbrdg_dist: DISTANCE ATOMS=2554,2640
 
-PRINT STRIDE=1 ARG=t1,t2,dyad_dist FILE=COLVAR_analysis
+PRINT ARG=t1,t2,dyad_dist,saltbrdg_dist STRIDE=1 FILE=COLVAR_Tor

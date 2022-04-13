@@ -1,5 +1,5 @@
-RESTART
-#PLUMED script to perform metadynamics over the C-CA-CB-CG dihedral angle of His41 in SARS-CoV1/CoV-2 MPro
+#RESTART
+#PLUMED script to perform metadynamics for torsions of the CA-CB-CG-CD2 dihedral angle of His41 in SARS-CoV-1/CoV-2 MPro
 
 t1: TORSION ATOMS=607,609,612,618
 
